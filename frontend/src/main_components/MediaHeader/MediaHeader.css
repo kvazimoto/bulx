@@ -1,0 +1,3 @@
+.media-header-btn {
+    width: clamp(25px, calc(var(--index) * 1), 100px);
+}

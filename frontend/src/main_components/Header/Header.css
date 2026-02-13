@@ -1,0 +1,88 @@
+.header-logo svg {
+    width: clamp(120px, calc(var(--index) * 4), 250px);
+}
+
+.main-header {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.main-header ul {
+    display: flex;
+    gap: calc(var(--index) * 1);
+}
+
+.main-header ul li {
+    list-style: none;
+}
+
+.main-header ul li a {
+    font-size: clamp(14px, calc(var(--index) * .52), 30px);
+    font-family: 'b2';
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    position: relative;
+    transition: .2s all ease;
+
+    &:hover {
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+.main-header ul li a::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-radius: 3px;
+    transition: .2s all ease;
+}
+
+.main-header ul li a:hover::before {
+    background: rgba(0, 0, 0, 1);
+    width: 100%;
+    transition: .2s all ease;
+}
+
+.language-choice-container {
+    display: flex;
+    align-items: center;
+    gap: calc(var(--index) * .3);
+}
+
+.language-choice-container button {
+    all: unset;
+    cursor: pointer;
+    font-size: clamp(14px, calc(var(--index) * .52), 30px);
+    font-family: 'b2';
+    color: rgba(0, 0, 0, 0.7);
+    display: block;
+    position: relative;
+    transition: .2s all ease;
+
+    &:hover {
+        color: rgba(0, 0, 0, 1);
+    }
+}
+
+.language-choice-container button::before {
+    content: "";
+    height: 2px;
+    width: 0;
+    background: rgba(0, 0, 0, 0.7);
+    position: absolute;
+    bottom: -2px;
+    left: 0;
+    border-radius: 3px;
+    transition: .2s all ease;
+}
+
+.language-choice-container button:hover::before {
+    background: rgba(0, 0, 0, 1);
+    width: 100%;
+    transition: .2s all ease;
+}

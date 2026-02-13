@@ -1,0 +1,54 @@
+.links-for-rules {
+    padding: calc(var(--index) * 2) calc(var(--index) * 1);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}
+
+.links-for-rules h1 {
+    font-size: clamp(24px, calc(var(--index) * 1.1), 90px);
+}
+
+.links-for-rules ul {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * .5);
+}
+
+.links-for-rules ul li {
+    list-style: url('../../assets/svg/menu-list-mini-none.svg');
+    transition: .3s all ease;
+
+    &:hover {
+        list-style: url('../../assets/svg/menu-list-mini-light.svg');
+    }
+}
+
+.links-for-rules ul li a {
+    color: #000;
+    font-family: 'b1';
+    opacity: .65;
+    transition: .3s all ease;
+}
+
+.media-menu-fixed-links-active-rules {
+    list-style: url('../../assets/svg/menu-list-mini.svg') !important;
+}
+
+.media-menu-fixed-links-active-rules a {
+    opacity: 1 !important;
+    transition: .3s all ease;
+}
+
+.media-menu-fixed-links-active-rules::marker {
+    width: 20px;
+}
+
+
+
+
+@media (max-width: 800px) {
+    .links-for-rules {
+        padding: calc(var(--index) * 2) calc(var(--index) * 1) calc(var(--index) * 0) calc(var(--index) * 1);
+    }
+}

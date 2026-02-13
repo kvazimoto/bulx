@@ -1,0 +1,10 @@
+.exchange-rulls-section-content-container-partners {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+.exchange-rulls-section-content {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}

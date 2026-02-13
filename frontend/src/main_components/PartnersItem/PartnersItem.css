@@ -1,0 +1,24 @@
+.partners-item-container {
+    display: flex;
+    gap: calc(var(--index) * .5);
+    align-items: center;
+}
+
+.partners-item-container-left img {
+    width: calc(var(--index) * 2.5);
+}
+
+.partners-item-container-right {
+    display: flex;
+    flex-direction: column;
+}
+
+.partners-item-container-right h3 {
+    font-family: 'b1';
+    font-size: calc(var(--index) * .65);
+}
+
+.partners-item-container-right p {
+    font-size: clamp(12px, calc(var(--index) * .5), 25px);
+    opacity: .65;
+}

@@ -1,0 +1,93 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'r1';
+}
+
+@font-face {
+  font-family: "b1";
+  src:
+    url("./assets/fonts/CenturyGothicPaneuropean/CenturyGothicPaneuropeanBold.ttf");
+  font-style: normal;
+}
+
+@font-face {
+  font-family: "b2";
+  src:
+    url("./assets/fonts/Involve/Involve-Bold.ttf");
+  font-style: normal;
+}
+
+
+@font-face {
+  font-family: "r1";
+  src:
+    url("./assets/fonts/Involve/Involve-Medium.ttf");
+  font-style: normal;
+}
+
+:root {
+  --index: calc(1vh + 1vw);
+  --iner: -1;
+
+  --black: #000;
+  --light-black: #303030;
+  --white: #fff;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+  background-color: #f9f9fd;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 10px;
+  background-color: var(--black);
+}
+
+::-webkit-scrollbar-track {
+  -webkit-box-shadow: inset 0 0 6px rgba(0,0,0,0.2);
+  border-radius: 10px;
+  background-color: #f9f9fd;
+}
+
+body {
+  background: #F7F7FC;
+  background-image: url('./assets/images/fon8.png');
+  background-size: cover;
+  background-position: center center;
+  background-attachment: fixed;
+  min-height: 100vh;
+  overflow-x: hidden;
+}
+
+a {
+  text-decoration: none;
+}
+
+input[type="checkbox"] {
+  accent-color: #000; /* любой цвет */
+}
+
+.main-container {
+  padding: calc(var(--index) * 1) 20% 0 20%;
+}
+
+.section-default-padding {
+  padding: calc(var(--index) * 1);
+}
+
+
+
+
+
+
+
+
+
+@media (max-width: 1750px) {
+    .main-container {
+        padding: calc(var(--index) * 2) 3% 0 3%;
+    }
+}

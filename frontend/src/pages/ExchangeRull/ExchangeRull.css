@@ -1,0 +1,59 @@
+.exchange-rulls-section-default {
+    display: grid;
+    grid-template-columns: 2fr 4fr;
+    margin: calc(var(--index) * 1) 0;
+}
+
+.exchange-rulls-section-content {
+    border-left: 1px solid rgba(0,0,0, .2);
+    padding: calc(var(--index) * 2) calc(var(--index) * 1);
+}
+
+.exchange-rulls-section {
+    background: var(--white);
+    border-radius: calc(var(--index) * .5);
+    padding: 0 calc(var(--index) * 1);
+}
+
+.exchange-rulls-section-content h1 {
+    font-size: clamp(24px, calc(var(--index) * 1.1), 90px);
+}
+
+.exchange-rulls-section-content-container {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+    padding-top: calc(var(--index) * 1);
+}
+
+.exchange-rulls-section-content-container ul {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}
+
+.exchange-rulls-section-content-container ul li {
+    list-style: none;
+    line-height: 1.5;
+    font-size: clamp(12px, calc(var(--index) * .5), 25px);
+    opacity: .8;
+}
+
+.exchange-rulls-section-content-container-title {
+    font-family: 'b2';
+    opacity: 1 !important;
+}
+
+
+
+
+
+@media (max-width: 800px) {
+    .exchange-rulls-section {
+        grid-template-columns: 1fr;
+    }
+
+    .exchange-rulls-section-content {
+        border: none;
+    }
+}

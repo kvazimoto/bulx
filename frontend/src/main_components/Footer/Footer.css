@@ -1,0 +1,105 @@
+.footer {
+    padding: calc(var(--index) * 1) 20% calc(var(--index) * .5) 20%;
+    background: var(--black);
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 2.5);
+}
+
+.footer-top-side ul li,
+.footer-top-side ul li a {
+    color: #fff;
+    list-style: none;
+}
+
+.footer-top-side {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+}
+
+.footer-top-side-title {
+    font-size: clamp(14px, calc(var(--index) * .52), 30px);
+    margin-bottom: calc(var(--index) * .5);
+    font-family: 'b1';
+}
+
+.footer-top-side ul li a {
+    font-size: clamp(12px, calc(var(--index) * .42), 24px);
+    opacity: .4;
+    display: block;
+    padding: calc(var(--index) * .1) 0;
+    transition: .2s all ease;
+    width: fit-content;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.footer-bottom-side {
+    display: flex;
+    align-items: end;
+    justify-content: space-between;
+}
+
+.footer-bottom-side p,
+.footer-bottom-side a {
+    color: #fff;
+    font-size: clamp(12px, calc(var(--index) * .42), 24px);
+    opacity: .4;
+
+    transition: .2s all ease;
+    width: fit-content;
+
+    &:hover {
+        opacity: 1;
+    }
+}
+
+.footer-bottom-side-left-logo svg {
+    width: clamp(120px, calc(var(--index) * 4.5), 250px);
+}
+
+.footer-bottom-side-left {
+    display: flex;
+    flex-direction: column;
+    gap: calc(var(--index) * 1);
+}
+
+.footer-bottom-side-left-links {
+    display: flex;
+    gap: calc(var(--index) * .5);
+}
+
+
+
+
+
+
+@media (max-width: 1300px) {
+    .footer-bottom-side {
+        flex-direction: column;
+        align-items: start;
+        gap: calc(var(--index) * 1);
+    }
+}
+
+@media (max-width: 1000px) {
+    .footer-top-side {
+        grid-template-columns: 1fr 1fr;
+        grid-row-gap: calc(var(--index) * 1);
+        grid-column-gap: calc(var(--index) * 2);
+    }
+}
+
+@media (max-width: 700px) {
+    .footer {
+        padding: calc(var(--index) * 1) 3% calc(var(--index) * .5) 3%;
+    }
+}
+
+@media (max-width: 500px) {
+    .footer-bottom-side-left-links {
+        flex-wrap: wrap;
+    }
+}
